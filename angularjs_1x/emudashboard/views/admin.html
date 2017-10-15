@@ -1,0 +1,18 @@
+
+
+<div style="width:100%">
+    <div class="paddRow aboutRow">
+        <div class="wrap">
+            <div class="head">Administation Page: </div>
+            <select ng-model="selectedCounty" ng-options="x.displayName for x in getCountiesData">{{hello}}</select>
+
+            <h1>You selected: {{selectedCounty.name}}</h1>
+        </div>
+    </div>
+
+    <div style="background-color:#f5f5f5">
+        <div class="wrap admin">
+            <div class="head">Additional information</div>
+        </div>
+    </div>
+</div>

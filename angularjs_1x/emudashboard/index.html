@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="EMUDashboard">
+    
+    <head>
+        <title>EMU Dashboard</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Script Tutorials" />
+        <meta name="description" content="EMU Dashboard">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        
+        <!-- add styles -->
+        <link href="css/application.css" rel="stylesheet" type="text/css" />
+        <link href="script/app/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+        
+    <body>
+        
+        <!-- Header -->
+        <ng-include src="'views/header.html'"></ng-include>
+        
+        <!-- main content -->
+        <p>
+            <a href="#/">Home Page | </a>
+            <a href="#input">Input Page | </a>
+            <a href="#output">Output Page</a>
+        </p>
+        
+        <div style="position:relative">
+            <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+        </div>
+        
+        <!-- add javascripts -->
+        <script src="script/app/libraries/jquery-v1.12.4/jquery.js"></script>
+        <script src="script/app/libraries/angularjs/1.4.8/angular.min.js"></script>
+        <script src="script/app/libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script src="script/app/libraries/angularjs/1.4.8/angular-route.js"></script>
+        <script src="script/app/app.module.js"></script>
+        <script src="script/app/services/services.js"></script>
+        <script src="script/app/controllers/controllers.js"></script>
+    </body>
+
+</html>
